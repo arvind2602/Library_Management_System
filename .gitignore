@@ -128,3 +128,31 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+
+# Ignore Python cache and compiled files
+__pycache__
+*.pyc
+
+# Ignore environment-related files
+.env
+
+# Ignore system and editor files
+.DS_Store
+.vscode/
+*.swp
+
+# Ignore FastAPI generated files
+__pycache__/
+dist/
+build/
+*.egg-info/
+
+# Ignore logs and other runtime files
+logs/
+*.log
+
+# Ignore local development files and configurations
+local_settings.py
+
