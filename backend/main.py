@@ -12,3 +12,10 @@ app = FastAPI()
 @app.get("/")
 async def root():
     return {"message": "Hello Wrld"}
+
+@app.get("/db")
+async def db():
+    database_name=client.list_database_names()
+    db=client['admin']
+    x=db.list_collection_names()
+    return {"Db name and List in DB": database_name}
